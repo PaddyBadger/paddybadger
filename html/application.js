@@ -1,0 +1,37 @@
+$(document).ready(function showContent() {
+  $(".about").click(function(){
+    $('.content').addClass('hide');
+    $('#about').removeClass('hide');
+  });
+  $(".timeline").click(function(){
+    $('.content').addClass('hide');
+    $('#timeline').removeClass('hide');
+  });
+  $(".links").click(function(){
+    $('.content').addClass('hide');
+    $('#links').removeClass('hide');
+  });
+  $(".coding").click(function(){
+    $('.content').addClass('hide');
+    $('#coding').removeClass('hide');
+  });
+  $(".ny").click(function(){
+    $('.content').addClass('hide');
+    $('#ny').removeClass('hide');
+  });
+  $(".travel").click(function(){
+    $('.content').addClass('hide');
+    $('#travel').removeClass('hide');
+  });
+  $(".btc").click(function(){
+    $('.content').addClass('hide');
+    $('#btc').removeClass('hide');
+  });
+  $(".back").click(function(){
+    $('.content').addClass('hide');
+    $('#back').removeClass('hide');
+  });
+  $('#about, #ny, #timeline, #links, #coding, #travel, #btc, #back').click(function() {
+    $('.content').addClass('hide');
+  });
+});

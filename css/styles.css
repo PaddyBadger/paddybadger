@@ -1,0 +1,395 @@
+* {
+	
+	font-family: 'Oxygen', sans-serif;
+}
+
+body {
+	width: 1210px;
+	margin: auto;
+}
+.welcome {
+  height: 100px;
+  position: relative;
+}
+.badger {
+  width: 90px;
+  height: 90px;
+  float: left;
+}
+#name {
+  display: inline-block;
+  margin-top:30px; 
+  width: 200px;
+}
+.hide {
+  display:none;
+}
+.content {
+  height: 400px;
+  width: 1206px;
+  overflow: scroll;
+}
+#about {
+  background: rgba(45, 125, 220, 0.5);
+}
+
+.about {
+  height: 280px;
+  width: 400px;
+  border: solid 1px black;
+  float: left;
+  cursor: pointer;
+}
+#labela {
+  margin-top: 230px;
+  height: 50px;
+}
+.timeline {
+  height: 280px;
+  width: 400px;
+  border: solid 1px black;
+  float: left;
+  cursor: pointer;
+}
+#timeline {
+  background: rgba(108, 61, 184, 0.5);
+}
+
+.links {
+  background: url('../images/life/links.jpg');
+  height: 280px;
+  width: 400px;
+  border: solid 1px black;
+  float: left;
+  cursor: pointer;
+}
+#links {
+  background: url('../images/life/links2.png');
+  opacity: 0.3;
+}
+
+.mask {
+    width: 400px;
+   height: 280px;
+   position: absolute;
+   
+}
+.links .mask {
+    background-color: rgba(255,255,255,0.7);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: translate(460px, -100px) rotate(180deg);
+   -moz-transform: translate(460px, -100px) rotate(180deg);
+   -o-transform: translate(460px, -100px) rotate(180deg);
+   -ms-transform: translate(460px, -100px) rotate(180deg);
+   transform: translate(460px, -100px) rotate(180deg);
+   -webkit-transition: all 0.2s 0.4s ease-in-out;
+   -moz-transition: all 0.2s 0.4s ease-in-out;
+   -o-transition: all 0.2s 0.4s ease-in-out;
+   -ms-transition: all 0.2s 0.4s ease-in-out;
+   transition: all 0.2s 0.4s ease-in-out;
+}
+.links:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transition-delay: 0s;
+   -moz-transition-delay: 0s;
+   -o-transition-delay: 0s;
+   -ms-transition-delay: 0s;
+   transition-delay: 0s;
+   -webkit-transform: translate(0px, 0px);
+   -moz-transform: translate(0px, 0px);
+   -o-transform: translate(0px, 0px);
+   -ms-transform: translate(0px, 0px);
+   transform: translate(0px, 0px);
+}
+#link1 {
+  width: 70px;
+  height: 70px;
+  margin-left: 25px;
+}
+#link2 {
+  width: 55px;
+  height: 50px;
+}
+#link3 {
+  width: 80px;
+  height: 85px;
+}
+#link4 {
+  width: 60px;
+  height: 60px;
+}
+#link5 {
+  width: 70px;
+  height: 70px;
+}
+#link6 {
+  margin-left: 90px;
+  width: 80px;
+  height: 80px;
+}
+#link7 {
+  margin-left: 70px;
+  margin-bottom: 10px;
+  width: 60px;
+  height: 60px;
+}
+ 
+.links #link1, .links #link3, .links #link5, .links #link6, .links #link7, .mask {
+  -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+.links:hover #link1,.links:hover #link3,.links:hover #link5, .mask {
+   -webkit-transform: translateY(100px);
+   -moz-transform: translateY(100px);
+   -o-transform: translateY(100px);
+   -ms-transform: translateY(100px);
+   transform: translateY(100px);
+   -webkit-transition-delay: 0.6s;
+   -moz-transition-delay: 0.6s;
+   -o-transition-delay: 0.6s;
+   -ms-transition-delay: 0.6s;
+   transition-delay: 0.6s;
+}
+.links:hover #link6, .links:hover #link7, .mask {
+   -webkit-transform: translateY(110px);
+   -moz-transform: translateY(110px);
+   -o-transform: translateY(110px);
+   -ms-transform: translateY(110px);
+   transform: translateY(110px);
+   -webkit-transition-delay: 0.4s;
+   -moz-transition-delay: 0.4s;
+   -o-transition-delay: 0.4s;
+   -ms-transition-delay: 0.4s;
+   transition-delay: 0.4s;
+}
+.coding {
+  background: url('../images/life/unicorn.jpeg') no-repeat;
+  height: 400px;
+  width: 601px;
+  border: solid 1px black;
+  float: left;
+  cursor: pointer;
+}
+
+.coding img {
+  margin: -10px 0 0 229px;
+}
+.star {
+  width: 20px;
+  height: 20px;
+  padding: 10px 40px 25px 20px !important;
+  margin: 0 !important;
+  opacity: 0;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+
+}
+.star:hover {
+opacity: 1;
+-moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+#coding {
+  background: rgba(13,119,125,0.5);
+}
+
+.ny {
+  height: 400px;
+  width: 601px;
+  border: solid 1px black;
+  float: left;
+  cursor: pointer;
+}
+#ny {
+  background: url('../images/life/nyr.png');
+  opacity: 0.3;
+}
+
+.flakes {
+  position: absolute;
+  margin-top: -20px;
+  overflow: hidden;
+  height: 400px;
+}
+.ny .one {
+  opacity: 0;
+}
+.ny .two {
+  opacity: 0;
+}
+.ny .three {
+  opacity: 0;
+}
+.ny:hover .one {
+  opacity: 1;
+   -webkit-animation: snow 4s linear infinite;
+    -moz-animation: snow 4s linear infinite;
+    -ms-animation: snow 4s linear infinite;
+    animation: snow 4s linear infinite; 
+}
+@-webkit-keyframes snow {
+0% { -webkit-transform: translateY(0px);}
+100% { -webkit-transform: translateY(400px);}
+}
+@-moz-keyframes spin {
+0% { -webkit-transform: translateY(0px);}
+100% { -webkit-transform: translateY(400px);}
+}
+@-o-keyframes spin {
+0% { -webkit-transform: translateY(0px);}
+100% { -webkit-transform: translateY(400px);}
+}
+@-ms-keyframes spin {
+0% { -ms-transform: translateY(0px);}
+100% { -webkit-transform: translateY(400px);}
+}
+.ny:hover .two {
+  opacity: 1;
+   -webkit-animation: snow 3s linear infinite;
+    -moz-animation: snow 3s linear infinite;
+    -ms-animation: snow 3s linear infinite;
+    animation: snow 3s linear infinite; 
+}
+@-webkit-keyframes snow {
+0% { -webkit-transform: translateY(0px);}
+100% { -webkit-transform: translateY(400px);}
+}
+@-moz-keyframes spin {
+0% { -webkit-transform: translateY(0px);}
+100% { -webkit-transform: translateY(400px);}
+}
+@-o-keyframes spin {
+0% { -webkit-transform: translateY(0px);}
+100% { -webkit-transform: translateY(400px);}
+}
+@-ms-keyframes spin {
+0% { -ms-transform: translateY(0px);}
+100% { -webkit-transform: translateY(400px);}
+}
+.ny:hover .three {
+  opacity: 1;
+   -webkit-animation: snow 6s linear infinite;
+    -moz-animation: snow 6s linear infinite;
+    -ms-animation: snow 6s linear infinite;
+    animation: snow 6s linear infinite; 
+}
+@-webkit-keyframes snow {
+0% { -webkit-transform: translateY(0px);}
+100% { -webkit-transform: translateY(400px);}
+}
+@-moz-keyframes spin {
+0% { -webkit-transform: translateY(0px);}
+100% { -webkit-transform: translateY(400px);}
+}
+@-o-keyframes spin {
+0% { -webkit-transform: translateY(0px);}
+100% { -webkit-transform: translateY(400px);}
+}
+@-ms-keyframes spin {
+0% { -ms-transform: translateY(0px);}
+100% { -webkit-transform: translateY(400px);}
+}
+.flakes img{
+  width: 50px;
+  height: 50px;
+}
+.ny #nyny {
+  margin-left: 360px;
+  margin-bottom: 30px;
+}
+.travel {
+  height: 280px;
+  width: 400px;
+  border: solid 1px black;
+  float: left;
+  cursor: pointer;
+}
+#travel {
+  background: rgba(154,60,180,0.5);
+}
+
+#color {
+  height:167px;
+  width:351px;
+  background: url('../images/life/logo.png') no-repeat;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  margin: 20px 0 40px 15px;
+}
+#color:hover {
+  height:167px;
+  width:351px;
+  background: url('../images/life/logo2.png') no-repeat;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  margin: 20px 0 40px 15px;
+}
+.btc {
+  height: 280px;
+  width: 400px;
+  border: solid 1px black;
+  float: left;
+  cursor: pointer;
+}
+.spin:hover {
+-webkit-animation: spin 1s infinite linear;
+-moz-animation: spin 1s infinite linear;
+-o-animation: spin 1s infinite linear;
+-ms-animation: spin 1s infinite linear;
+}
+@-webkit-keyframes spin {
+0% { -webkit-transform: rotateY(0deg);}
+100% { -webkit-transform: rotateY(360deg);}
+}
+@-moz-keyframes spin {
+0% { -moz-transform: rotateY(0deg);}
+100% { -moz-transform: rotateY(360deg);}
+}
+@-o-keyframes spin {
+0% { -o-transform: rotateY(0deg);}
+100% { -o-transform: rotateY(360deg);}
+}
+@-ms-keyframes spin {
+0% { -ms-transform: rotateY(0deg);}
+100% { -ms-transform: rotateY(360deg);}
+}
+travel {
+  background: rgba(154,60,180,0.7);
+}
+#btc {
+  background: rgba(68,164,55,0.7);
+}
+
+.back {
+  background: url('../images/life/saudi.jpeg') no-repeat;
+  height: 280px;
+  width: 400px;
+  border: solid 1px black;
+  float: left;
+  cursor: pointer;
+}
+#back {
+  background: rgba(169,46,57,1);
+}
+
