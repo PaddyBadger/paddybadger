@@ -30,7 +30,7 @@ p {
   display:none;
 }
 .content {
-  height: 400px;
+  height: 500px;
   width: 1206px;
   overflow: scroll;
 }
@@ -374,7 +374,10 @@ margin: 20px;
   }
 #ny {
   background: url('../images/life/nyr.png');
-  opacity: 0.3;
+  opacity: 0.7;
+}
+#ny p {
+  background: rgba(255,255,255,0.5);
 }
 
 .flakes {
