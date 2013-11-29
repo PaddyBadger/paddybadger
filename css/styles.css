@@ -9,7 +9,7 @@ body {
 	margin: auto;
 }
 p {
-  padding: 10px 20px;
+  padding: 10px 20px 0 20px;
   background: white;
 }
 .welcome {
@@ -105,6 +105,29 @@ p {
 #timeline {
   overflow: hidden;
 }
+.exp p { 
+  width: 200px;
+  margin-top: 300px;
+  background-image: url('../images/life/bg.png');
+  position: absolute;
+}
+
+#timeline #exeter {
+  
+}
+#timeline #experian {
+  margin-left: 200px
+}
+#timeline #google {
+  margin-left: 450px
+}
+#timeline #bloc {
+ margin-left: 820px
+}
+#timeline #thinkful {
+margin-left: 1000px
+}
+
 .opa {
   opacity: 0.1;
   height: 223px;
@@ -378,6 +401,7 @@ margin: 20px;
 }
 #ny p {
   background: rgba(255,255,255,0.5);
+  margin: 20px;
 }
 
 .flakes {
@@ -485,7 +509,13 @@ margin: 20px;
 #travel {
   background: rgba(154,60,180,0.5);
 }
-
+#travel p {
+  margin: 20px;
+}
+#travel img {
+  margin-left: 27px;
+  margin-bottom: 40px;
+}
 #color {
   height:167px;
   width:351px;
@@ -549,7 +579,9 @@ travel {
 #btc {
   background: rgba(68,164,55,0.7);
 }
-
+#btc p {
+  margin: 20px;
+}
 .back {
   background: url('../images/life/saudi.jpeg') no-repeat;
   height: 280px;
@@ -564,4 +596,9 @@ travel {
 #back {
   background: rgba(169,46,57,1);
 }
-
+#back p {
+  margin: 20px;
+}
+footer {
+  height: 100px;
+}

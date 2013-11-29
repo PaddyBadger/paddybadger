@@ -35,3 +35,29 @@ $(document).ready(function showContent() {
     $('.content').addClass('hide');
   });
 });
+
+$(document).ready(function showJob() {
+  $(".exp1").hover(function(){
+    $('.job').addClass('hide');
+    $('#exeter').removeClass('hide');
+  });
+  $(".exp2").hover(function(){
+    $('.job').addClass('hide');
+    $('#experian').removeClass('hide');
+  });
+  $(".exp3").hover(function(){
+    $('.job').addClass('hide');
+    $('#google').removeClass('hide');
+  });
+  $(".exp4").hover(function(){
+    $('.job').addClass('hide');
+    $('#bloc').removeClass('hide');
+  });
+  $(".exp5").hover(function(){
+    $('.job').addClass('hide');
+    $('#thinkful').removeClass('hide');
+  });
+  $('.exp1, .exp2, .exp3, .exp4, .exp5').mouseleave(function() {
+    $('.job').addClass('hide');
+  });
+});
